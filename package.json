@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/dbuenzli/cmdliner#readme",
   "dependencies": {
-    "bs-platform": "^4.0.1"
+    "bs-platform": "^5.0.4"
   }
 }
