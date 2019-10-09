@@ -3,6 +3,42 @@
   "version": "10.2.1",
   "description": "Cmdliner — Declarative definition of command line interfaces for OCaml",
   "main": "src/cmdliner.bs.js",
+  "devDependencies": {
+    "bs-platform": "^5.0.6"
+  },
+  "peerDependencies": {
+    "bs-platform": ">=4.x"
+  },
+  "scripts": {
+    "build": "bsb -clean-world -make-world",
+    "prepare": "npm run build",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "bsconfig.json",
+    "opam",
+    "src/**/*.ml",
+    "src/**/*.mli",
+    "src/**/*.bs.js",
+    "doc/**/*",
+    "pkg/**/*",
+    "test/**/*.ml",
+    "test/**/*.mli",
+    "test/**/*.bs.js",
+    "!**/dune",
+    "!**/.merlin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELLIOTTCABLE/bs-cmdliner.git"
+  },
+  "author": "Daniel Bünzli <daniel.buenzl i@erratique.ch>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELLIOTTCABLE/bs-cmdliner/issues"
+  },
+  "homepage": "http://erratique.ch/software/cmdliner",
   "keywords": [
     "BuckleScript",
     "ReasonML",
@@ -14,26 +50,5 @@
     "CLI",
     "minimist",
     "yargs"
-  ],
-  "scripts": {
-    "prepare": "npm run clean && bsb -make-world",
-    "clean": "bsb -clean-world",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ELLIOTTCABLE/bs-cmdliner.git"
-  },
-  "author": "Daniel Bünzli <daniel.buenzl i@erratique.ch>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ELLIOTTCABLE/bs-cmdliner/issues"
-  },
-  "homepage": "http://erratique.ch/software/cmdliner",
-  "devDependencies": {
-    "bs-platform": "^5.0.6"
-  },
-  "peerDependencies": {
-    "bs-platform": ">=4.0.0"
-  }
+  ]
 }

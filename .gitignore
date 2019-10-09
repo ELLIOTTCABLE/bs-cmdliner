@@ -12,3 +12,4 @@ node_modules
 *.bs.js
 cmdliner.install
 **/.merlin
+elliottcable-bs-cmdliner-*.tgz
